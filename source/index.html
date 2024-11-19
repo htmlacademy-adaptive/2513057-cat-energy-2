@@ -11,33 +11,47 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header_logo" href="catalog.html">
-      <img class="main-header__logo-image" src="img/logotype-phone.svg" width="60" height="50" alt="CAT ENERGY">
-    </a>/.logo
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
+    <a class="main-header__logotype logotype" href="#">
+      <picture>
+        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/desktop-logotype-picture.svg">
+        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/
+        tablet-logotype-picture.svg">
+        <img class="logotype__pictore" src="images/mobile-logotype-picture.svg" width="33" height="38" alt="Логотип CAT ENERGY">
+      </picture>
+      <img class="logotype__name" src="images/mobile-logotype-name.svg" width="101" height="18" alt="Товарный знак CAT ENERGY">
+    </a>/
+
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть/Закрыть меню</span>
+      </button>
+      <ul class="main-nav__list main-nav__list--index">
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--active" href="#">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
     </nav>
+    </div>
   </header>/
+
   <main class="main-container">
-    <section class="promo">
-      <h2 class="promo__title">Функциональное питание для котов</h2>
+    <section class="main-container__promo promo">
+      <h1 class="promo__title">Функциональное питание для котов</h1>
       <p class="promo__text">Занялся собой? Займись котом!</p>
-      <a class="promo__button button" href="form.html">Подобрать программу</a>
-      <img class="main-promo__index-can-tablet1" src="img/index-can-tablet1.svg" width="709" height="609" alt="Порция питания Cat Energy PRO с курицей">
+      <picture>
+        <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srsset="images/raster/cat-energy-chicken@1x.png 1x, images/raster/cat-energy-chicken@2x.png 2x">
+        <source width="709" height="609" type="image/png" media="(min-width: 768px)" srsset="images/raster/cat-energy-chicken@1x.png 1x, images/raster/cat-energy-chicken@2x.png 2x">
+        <img class="promo__image" src="images/raster/cat-energy-chicken@1x.png" srccet="images/raster/cat-energy-chicken@2x.png 2x" width="280" height="270" alt="Оранжевая банка с питанием Cat Energy со вкусом курицы">
+      </picture>
+      <a class=" promo__button button" href="form.html">Подобрать программу</a>
     </section>
+
     <section class="program">
       <div class="container program__container">
         <h2 class="visually-hidden">Программа питания</h2>
@@ -69,82 +83,100 @@
       <div class="container advantages__container">
         <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list">
-          <li class="advantages__item advantages__item--icon-1">
+          <li class="advantages__item advantages__item--nutrients">
             <p>Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
-          <li class="advantages__item advantages__item--icon-2">
+          <li class="advantages__item advantages__item--flour">
             <p>Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </li>
-          <li class="advantages__item advantages__item--icon-3">
+          <li class="advantages__item advantages__item--meal">
             <p>Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
-          <li class="advantages__item advantages__item--icon-4">
+          <li class="advantages__item advantages__item--month">
             <p>Уже через месяц наслаждайтесь изменениями к лучшему;<br> вашего питомца!</p>
           </li>
         </ul>
       </div>
     </section>
-    <section class="sample">
-      <div class="sample__wrapper">
-        <div class="container sample__container">
-          <h2 class="sample__title">Живой пример</h2>
-          <p class="sample__text">
-            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек;<br>по-прежнему спит по 16 часов в день.</p>
-        </div>
-        <div class="sample__stats">
-          <span class="sample__stats-result--block-1">5 кг</span>
-          <span class="sample__stats-description--block-1">Снижение веса</span>
-          <span class="sample__stats-result--block-2">60 дней</span>
-          <span class="sample__stats-description--block-2">Затрачено времени</span>
+    <section class="example">
+      <div class="container example__container">
+        <h2 class="example__title">Живой пример</h2>
+        <p class="example__text">
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <div class="example__statistics">
+          <div class="example__progress-list">
+            <div class="example__progress">
+              <span class="example__progress-result example__progress-result--block-1">5 кг</span>
+              <span class="example__progress-text example__progress-text--block-1">Снижение веса</span>
+            </div>
+            <div class="example__progress">
+              <span class="example__progress-result example__progress-result--block-2">60 дней</span>
+              <span class="example__progress-text example__progress-text--block-2">Затрачено времени</span>
+            </div>
+          </div>
+          <p class="example__price-text">
+            Затраты на питание:
+            <span class="example__price-value">15 000 руб.</span>
+          </p>
         </div>
       </div>
-      <p class="sample_stats-text">
-        Затраты на питание:
-        <span class="sample__stats-value">15 000 руб.</span>
-      </p>
-      </div>
+      <div class="example__container slider">
+        <picture>
+          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srsset="images/raster/before-cat@1x.png 1x, images/raster/before-cat@2x.png 2x">
+          <img class="slider__image" src="images/raster/before-cat@1x.png" srccet="images/raster/before-cat@2x.png 2x" width="280" height="256" alt="Фото до: толстенький котик">
+        </picture>
+        <picture>
+          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srsset="images/raster/after-cat@1x.png 1x, images/raster/after-cat@2x.png 2x">
+          <img class="slider__image" src="images/raster/after-cat@1x.png" srccet="images/after-cat@2x.png 2x" width="280" height="256" alt="Фото после: худенький котик">
+        </picture>
+        <button class="slider__button" type="button"><span class="visually-hidden">Передвинуть ползунок</span></button>
       </div>
     </section>
   </main>
-  <footer>
-    <footer class="page-footer">
-      <section class="page-footer__contacts contacts">
-        <div class="container">
-          <h2 class="visually-hidden">Контакты</h2>
-          <div class="contacts__wrapper">
-            <p class="contacts__text">Приглашаем <br> к сотрудничеству дилеров!</p>
-            <p class="contacts__address">ул. Большая <br> Конюшенная, д. 19/8 <br> <span>Санкт-Петербург</span></p>
-            <h2 class="visually-hidden">Карта</h2>
-          </div>
-        </div>
 
-        <div class="page-footer__social social">
-          <h2 class="visually-hidden">Мы в социальных сетях</h2>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link" href="#" aria-label="Логотип VK">
-                <span class="visually-hidden">Вконтакте</span>
+  <footer class="page-footer">
+    <section class="page-footer__contacts contacts">
+      <div class="contacts__wrapper">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="contacts__text">Приглашаем <br> к сотрудничеству дилеров!</p>
+        <p class="contacts__address">ул. Большая <br> Конюшенная, д. 19/8 <br> <span>Санкт-Петербург</span></p>
+        <h2 class="visually-hidden">Карта</h2>
+      </div>
+      <div class="contacts__map">
+        <picture>
 
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#" aria-label="Белый логотип Instagram в черной обводке">
-                <span class="visually-hidden">Инстаграм</span>
+        </picture>
+      </div>
+      <div class="page-footer__social social">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Логотип VK">
+              <span class="visually-hidden">Вконтакте</span>
 
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#" aria-label="Белый логотип facebook в черной обводке">
-                <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Белый логотип Instagram в черной обводке">
+              <span class="visually-hidden">Инстаграм</span>
 
-              </a>
-            </li>
-          </ul>
-        </div>
-        ction>
-    </footer>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Белый логотип facebook в черной обводке">
+              <span class="visually-hidden">Фейсбук</span>
+
+            </a>
+          </li>
+        </ul>
+      </div>
+      ction>
     </section>
   </footer>
+</body>
+
+</html>
+
 </body>
 
 </html>
