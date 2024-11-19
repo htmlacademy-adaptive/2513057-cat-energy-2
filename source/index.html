@@ -6,20 +6,24 @@
   <title>Название проекта</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
-  <script src="scripts/index.js" defer></script>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <script src="scripts/index.js" defer>
+  </script>
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logotype logotype" href="#">
       <picture>
-        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/desktop-logotype-picture.svg">
-        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/
-        tablet-logotype-picture.svg">
-        <img class="logotype__pictore" src="images/mobile-logotype-picture.svg" width="33" height="38" alt="Логотип CAT ENERGY">
+        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/svg/logotype-desktop.svg">
+        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/svg/logotype-tablet.svg">
+        <img class="logotype__pictore" src="images/svg/logotype.svg" width="33" height="38" alt="Логотип CAT ENERGY">
       </picture>
-      <img class="logotype__name" src="images/mobile-logotype-name.svg" width="101" height="18" alt="Товарный знак CAT ENERGY">
-    </a>/
+      <img class="logotype__name" src="images/svg/logotype-name.svg" width="101" height="18" alt="Товарный знак CAT ENERGY">
+    </a>
 
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button">
@@ -37,7 +41,7 @@
         </li>
       </ul>
     </nav>
-    </div>
+
   </header>/
 
   <main class="main-container">
@@ -45,9 +49,9 @@
       <h1 class="promo__title">Функциональное питание для котов</h1>
       <p class="promo__text">Занялся собой? Займись котом!</p>
       <picture>
-        <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srsset="images/raster/cat-energy-chicken@1x.png 1x, images/raster/cat-energy-chicken@2x.png 2x">
-        <source width="709" height="609" type="image/png" media="(min-width: 768px)" srsset="images/raster/cat-energy-chicken@1x.png 1x, images/raster/cat-energy-chicken@2x.png 2x">
-        <img class="promo__image" src="images/raster/cat-energy-chicken@1x.png" srccet="images/raster/cat-energy-chicken@2x.png 2x" width="280" height="270" alt="Оранжевая банка с питанием Cat Energy со вкусом курицы">
+        <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/raster/cat-energy-chicken@1x.png 1x, images/raster/cat-energy-chicken@2x.png 2x">
+        <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/raster/cat-energy-chicken@1x.png 1x, images/raster/cat-energy-chicken@2x.png 2x">
+        <img class="promo__image" src="images/raster/cat-energy-chicken@1x.png" srcset="images/raster/cat-energy-chicken@2x.png 2x" width="280" height="270" alt="Оранжевая банка с питанием Cat Energy со вкусом курицы">
       </picture>
       <a class=" promo__button button" href="form.html">Подобрать программу</a>
     </section>
@@ -122,12 +126,12 @@
       </div>
       <div class="example__container slider">
         <picture>
-          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srsset="images/raster/before-cat@1x.png 1x, images/raster/before-cat@2x.png 2x">
-          <img class="slider__image" src="images/raster/before-cat@1x.png" srccet="images/raster/before-cat@2x.png 2x" width="280" height="256" alt="Фото до: толстенький котик">
+          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/raster/before-cat@1x.png 1x, images/raster/before-cat@2x.png 2x">
+          <img class="slider__image" src="images/raster/before-cat@1x.png" srcset="images/raster/before-cat@2x.png 2x" width="280" height="256" alt="Фото до: толстенький котик">
         </picture>
         <picture>
-          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srsset="images/raster/after-cat@1x.png 1x, images/raster/after-cat@2x.png 2x">
-          <img class="slider__image" src="images/raster/after-cat@1x.png" srccet="images/after-cat@2x.png 2x" width="280" height="256" alt="Фото после: худенький котик">
+          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/raster/after-cat@1x.png 1x, images/raster/after-cat@2x.png 2x">
+          <img class="slider__image" src="images/raster/after-cat@1x.png" srcset="images/after-cat@2x.png 2x" width="280" height="256" alt="Фото после: худенький котик">
         </picture>
         <button class="slider__button" type="button"><span class="visually-hidden">Передвинуть ползунок</span></button>
       </div>
@@ -140,43 +144,37 @@
         <h2 class="visually-hidden">Контакты</h2>
         <p class="contacts__text">Приглашаем <br> к сотрудничеству дилеров!</p>
         <p class="contacts__address">ул. Большая <br> Конюшенная, д. 19/8 <br> <span>Санкт-Петербург</span></p>
-        <h2 class="visually-hidden">Карта</h2>
       </div>
       <div class="contacts__map">
-        <picture>
 
-        </picture>
+        <iframe class="contacts_location" src="https://yandex.ru/map-widget/v1/?ll=30.325680%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=16.64" width="1440" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
       </div>
-      <div class="page-footer__social social">
-        <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link" href="#" aria-label="Логотип VK">
-              <span class="visually-hidden">Вконтакте</span>
-
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#" aria-label="Белый логотип Instagram в черной обводке">
-              <span class="visually-hidden">Инстаграм</span>
-
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#" aria-label="Белый логотип facebook в черной обводке">
-              <span class="visually-hidden">Фейсбук</span>
-
-            </a>
-          </li>
-        </ul>
-      </div>
-      ction>
     </section>
+
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logotype logotype" href="index.html">
+        <img class="logotype__name" src="images/logotype-name.svg/" width="128" height="24" alt="Cat Energy">
+      </a>
+      <h2 class="visually-hidden">Мы в социальных сетях</h2>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="https://vk.com/htmlacademy" aria-label="Логотип VK">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="//www.instagram.com/htmlacademy/" aria-label="Белый логотип Instagram в черной обводке">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="//www.facebook.com/htmlacademy" aria-label="Белый логотип facebook в черной обводке">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </footer>
-</body>
-
-</html>
-
 </body>
 
 </html>
