@@ -1,0 +1,38 @@
+.slider__button {
+  cursor: pointer;
+  width: 4px;
+  height: 100%;
+  display: block;
+  background-color: $dark-grey;
+  position: absolute;
+  top: 1700px;
+  left: -2px;
+  border-radius: 2px;
+  border: none;
+}
+
+.slider__button::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: $white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid $dark-grey;
+}
+
+.slider__button::after {
+  content: "";
+  width: 24px;
+  height: 18px;
+  background-color: $white;
+  border-radius: 50%;
+  position: absolute;
+  top: 53%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  background-image: url("../../icons/stack.svg#slider-button");
+}

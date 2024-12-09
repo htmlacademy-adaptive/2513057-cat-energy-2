@@ -1,0 +1,35 @@
+.main-nav__link {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  color: $black;
+  text-transform: uppercase;
+  position: relative;
+}
+
+
+.main-nav__toggle {
+  background-image: url("../../icons/stack.svg#cross.svg");
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.main-nav__item {
+  padding: 25px 0;
+  border-top: 1px solid #e6e6e6;
+}
+

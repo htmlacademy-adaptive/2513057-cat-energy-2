@@ -1,0 +1,39 @@
+.advantages__item--leaf::before {
+  background-size: 30px 32px;
+  background-image: url("../../icons/stack.svg#leaf");
+}
+
+.advantages__item--powder::before {
+  background-size: 30px 32px;
+  background-image: url("../../icons/stack.svg#powder");
+}
+
+.advantages__item--cutlery::before {
+  background-size: 30px 32px;
+  background-image: url("../../icons/stack.svg#cutlery");
+}
+
+.advantages__item--clock::before {
+  background-size: 30px 32px;
+  background-image: url("../../icons/stack.svg#clock");
+}
+
+.advantages__item {
+  flex-flow: row;
+  justify-content: start;
+  align-items: normal;
+  gap: 20px;
+}
+
+.advantages__item::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  display: block;
+  background-color: $basic-green;
+  background-position: 50%;
+  flex-shrink: 0;
+  background-size: 26px 30px;
+  background-repeat: no-repeat;
+}
+
