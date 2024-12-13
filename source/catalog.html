@@ -311,21 +311,30 @@
           <a class="product__link button button--succes" href="#">Заказать</a>
         </li>
       </ul>
-      <p class="additional-products__promotion">Закажите все<br> и получите чехол для<br> кота в подарок!</p>
-    </section>
-    <section class="actions">
-      <div class="container">
-        <h2 class="actions__tittle">Акции и новинки</h2>
-        <p class="actions__discription">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
-        <div class="actions__wrapper">
-          <form class="actions__following-form" action="https://echo.htmlacademy.ru" method="post">
-            <label class="visually-hidden" for="field-subscribe">Подписаться</label>
-            <input class="actions__field-subscribe" placeholder="кuklachev@gmail.com" type="email" name="field-subscribe" id="field-subscribe">
-            <button class="actions__following-button button button--succes" type="button">Подписаться</button>
-          </form>
-        </div>
+
+      <div class="additional-container">
+        <p class="additional-products__promotion">Закажите все<br> и получите чехол для<br> кота в подарок!</p>
+
+        <picture>
+          <source width="245" height="288" type="image/png" media="(min-width: 1440px)" srcset="images/raster/group@1x.png 1x, images/raster/group@2x.png 2x">
+          <source width="707" height="200" type="image/png" media="(min-width: 768px)" srcset="images/raster/group@1x.png 1x, images/raster/group@2x.png 2x">
+          <img class="additional__image" src="group@1x.png" srcset="images/raster/group@2x.png 2x" width="280" height="290" alt="Кот в чехле">
+        </picture>
       </div>
-    </section>
+
+      <section class="actions">
+        <div class="container">
+          <h2 class="actions__tittle">Акции и новинки</h2>
+          <p class="actions__discription">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
+          <div class="actions__wrapper">
+            <form class="actions__following-form" action="https://echo.htmlacademy.ru" method="post">
+              <label class="visually-hidden" for="field-subscribe">Подписаться</label>
+              <input class="actions__field-subscribe" placeholder="кuklachev@gmail.com" type="email" name="field-subscribe" id="field-subscribe">
+              <button class="actions__following-button button button--succes" type="button">Подписаться</button>
+            </form>
+          </div>
+        </div>
+      </section>
   </main>
 
   <footer class="page-footer">

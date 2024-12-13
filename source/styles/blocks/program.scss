@@ -14,21 +14,53 @@
   position: relative;
 }
 
-.program__item::before {
-  content: "";
-  background-color: $basic-green;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: block;
-}
 
 .program__item-title--slim::after {
   content: "";
   background-image: url("../../icons/stack.svg#black-pantere");
   background-repeat: no-repeat;
-  background-size: 36px 50px;
   position: absolute;
-  top: -3px;
-  left: 7px;
+  width: 67px;
+  height: 28px;
+  top: 21px;
+  left: -33px;
+}
+
+.program__icon--pro::after {
+  content: "";
+  background-image: url("../../icons/stack.svg#black-cat");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 36px;
+  height: 50px;
+  top: -28px;
+  left: -16px;
+}
+
+.program__icon {
+  position: relative;
+  display: inline-block;
+}
+
+.program__icon--slim {
+  margin-right: 35px;
+}
+
+.program__icon--pro {
+  margin-right: 35px;
+}
+
+
+.program__icon::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $basic-green;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: block;
+  z-index: -1;
 }

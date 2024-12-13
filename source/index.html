@@ -49,6 +49,11 @@
       <h1 class="promo__title main-title">Функциональное питание для котов</h1>
       <p class="promo__text">Занялся собой? Займись котом!</p>
       <picture>
+        <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/raster/cat-licking-background@1x.png 1x, images/raster/cat-licking-background@2x.png 2x">
+        <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/raster/cat-licking-background@1x.png 1x, images/raster/cat-licking-background@2x.png 2x">
+        <img class="promo__image" src="images/raster/cat-licking-background@1x.png" srcset="images/raster/cat-licking-background@2x.png 2x" width="280" height="270" alt="Облизывающийся кот">
+      </picture>
+      <picture>
         <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/raster/cat-energy-chicken@1x.png 1x, images/raster/cat-energy-chicken@2x.png 2x">
         <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/raster/cat-energy-chicken@1x.png 1x, images/raster/cat-energy-chicken@2x.png 2x">
         <img class="promo__image" src="images/raster/cat-energy-chicken@1x.png" srcset="images/raster/cat-energy-chicken@2x.png 2x" width="280" height="270" alt="Оранжевая банка с питанием Cat Energy со вкусом курицы">
@@ -152,26 +157,28 @@
 
     <div class="page-footer__wrapper">
       <a class="page-footer__logotype logotype" href="index.html">
-        <img class="logotype__name" src="images/logotype-name.svg/" width="128" height="24" alt="Cat Energy">
+        <img class="logotype__name" src="images/svg/logotype-name.svg" width="128" height="24" alt="Cat Energy">
       </a>
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link" href="https://vk.com/htmlacademy" aria-label="Логотип VK">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy/" aria-label="Логотип VK">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="//www.instagram.com/htmlacademy/" aria-label="Белый логотип Instagram в черной обводке">
-            <span class="visually-hidden">Инстаграм</span>
+          <a class="social__link social__link--youtube" href="https://youtube.com/htmlacademy/" aria-label="Белый логотип youtube в черной обводке">
+            <span class="visually-hidden">Телеграмм</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="//www.facebook.com/htmlacademy" aria-label="Белый логотип facebook в черной обводке">
-            <span class="visually-hidden">Фейсбук</span>
+          <a class="social__link social__link--telegram" href="//www.telegram.com/htmlacademy/" aria-label="Белый логотип telegram в черной обводке">
+            <span class="visually-hidden">Телеграмм</span>
           </a>
         </li>
       </ul>
+      <a class="main-futer__copyright copyright" href="//https:htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+      </a>
     </div>
   </footer>
 </body>

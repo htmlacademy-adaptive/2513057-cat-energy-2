@@ -5,10 +5,14 @@
   display: block;
   background-color: $dark-grey;
   position: absolute;
-  top: 1700px;
-  left: -2px;
+  top: 0;
+  left: 50%;
   border-radius: 2px;
   border: none;
+}
+
+.slider {
+  position: relative;
 }
 
 .slider__button::before {
@@ -31,8 +35,8 @@
   background-color: $white;
   border-radius: 50%;
   position: absolute;
-  top: 53%;
-  left: 53%;
+  top: 52%;
+  left: 50%;
   transform: translate(-50%, -50%);
   background-image: url("../../icons/stack.svg#slider-button");
 }
