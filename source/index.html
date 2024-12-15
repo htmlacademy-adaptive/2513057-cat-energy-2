@@ -21,7 +21,7 @@
       <picture>
         <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/svg/logotype-desktop.svg">
         <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/svg/logotype-tablet.svg">
-        <img class="logotype__pictore" src="images/svg/logotype.svg" width="33" height="38" alt="Логотип CAT ENERGY">
+        <img class="logotype__pictore" src="images/svg/logo-mobile.svg" width="33" height="38" alt="Логотип CAT ENERGY">
       </picture>
       <img class="logotype__name" src="images/svg/logotype-name.svg" width="101" height="18" alt="Товарный знак CAT ENERGY">
     </a>
@@ -42,17 +42,12 @@
         </li>
       </ul>
     </nav>
-  </header>/
+  </header>
 
   <main class="main-container">
     <section class="main-container__promo promo">
       <h1 class="promo__title main-title">Функциональное питание для котов</h1>
       <p class="promo__text">Занялся собой? Займись котом!</p>
-      <picture>
-        <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/raster/cat-licking-background@1x.png 1x, images/raster/cat-licking-background@2x.png 2x">
-        <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/raster/cat-licking-background@1x.png 1x, images/raster/cat-licking-background@2x.png 2x">
-        <img class="promo__image" src="images/raster/cat-licking-background@1x.png" srcset="images/raster/cat-licking-background@2x.png 2x" width="280" height="270" alt="Облизывающийся кот">
-      </picture>
       <picture>
         <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/raster/cat-energy-chicken@1x.png 1x, images/raster/cat-energy-chicken@2x.png 2x">
         <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/raster/cat-energy-chicken@1x.png 1x, images/raster/cat-energy-chicken@2x.png 2x">
@@ -77,7 +72,11 @@
           </li>
           <li class="program__item program__item--pro">
             <h3 class="program__item-title">
-              <span class="program__icon program__icon--pro"></span>
+              <span class="program__icon program__icon--slim">
+                <svg width="38" height="50">
+                  <use href="icons/stack.svg#black-cat"></use>
+                </svg>
+              </span>
               Набор массы
             </h3>
             <p class="program__item-text program__item-text--pro">
@@ -139,6 +138,7 @@
           <img class="slider__image" src="images/raster/after-cat@1x.png" srcset="images/after-cat@2x.png 2x" width="280" height="256" alt="Фото после: худенький котик">
         </picture>
         <button class="slider__button" type="button"><span class="visually-hidden">Передвинуть ползунок</span></button>
+
       </div>
     </section>
   </main>
@@ -178,6 +178,10 @@
         </li>
       </ul>
       <a class="main-futer__copyright copyright" href="//https:htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+        <span class="futer-copiright__text">HTML Academy</span>
+        <svg width="27" height="34">
+          <use href="icons/stack.svg#academy-logo"></use>
+        </svg>
       </a>
     </div>
   </footer>
