@@ -1,14 +1,61 @@
-.logotype__name {
+.logotype {
+  display: flex;
+  align-items: center;
+
+
   @media (min-width: $tablet-width) {
-    position: relative;
-    margin-left: 14px;
-    left: 0;
+    gap: 13px;
+    height: auto;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 14px;
+  }
+}
+
+.logotype:hover {
+  opacity: 0.8;
+}
+
+.logotype:active {
+  opacity: 0.6;
+}
+
+
+.logotype__name.logotype__pictore:hover {
+  color: $additional-accent-color;
+}
+
+.logotype__name.logotype__pictore:active {
+  color: $additional-accent-color;
+}
+
+.logo__pictore {
+  display: block;
+  width: 33px;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+  }
+}
+
+.logotype__name {
+  display: block;
+  width: 101px;
+  height: 18px;
 
   @media (min-width: $desktop-width) {
     width: 118px;
     height: 21px;
-    margin-left: 10px;
   }
 }
 
+.logotype__name-footer {
+  width: 128px;
+  height: 24px;
+}

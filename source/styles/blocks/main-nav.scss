@@ -1,12 +1,32 @@
-.main-nav__link {
-  font-family: $secondary-font;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  text-decoration: none;
+.main-nav {
   color: $black;
-  text-transform: uppercase;
-  position: relative;
+  font-size: 20px;
+  line-height: 20px;
+  background-color: $white;
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 436px;
+    text-wrap: nowrap;
+    font-size: 18px;
+    line-height: 24px;
+    margin-right: 5px;
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 50%;
+    background-color: inherit;
+    padding-top: 9px;
+    padding-left: 133px;
+    box-sizing: border-box;
+  }
 }
 
 
@@ -33,3 +53,6 @@
   border-top: 1px solid #e6e6e6;
 }
 
+.main-nav__link {
+  text-decoration: none;
+}

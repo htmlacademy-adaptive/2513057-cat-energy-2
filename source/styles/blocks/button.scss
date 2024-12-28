@@ -1,10 +1,50 @@
 .button {
   font-family: $secondary-font;
+  background-color: $basic-green;
+  color: $white;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   transition-duration: none;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  box-sizing: border-box;
+  padding: 10px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px 26px;
+  }
+
+  &--grey {
+    color: $dark-grey;
+    background-color: $bg-color;
+    width: auto;
+  }
 }
+
+.button:hover {
+  background-color: $basic-button-color;
+}
+
+.button:active {
+  background-color: $basic-button-color;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button--grey:hover {
+  background-color: $additional-button-color;
+  color: $dark-grey;
+}
+
+.button--grey:active {
+  background-color: $additional-button-color;
+  color: $dark-grey;
+}
+
 
 .button--succes {
   background-color: $basic-green;
@@ -15,3 +55,4 @@
   background-color: $bg-color;
   color: $dark-grey;
 }
+
