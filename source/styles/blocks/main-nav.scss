@@ -36,6 +36,11 @@
   height: 24px;
   background-color: #ffffff;
   background-repeat: no-repeat;
+
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__list {
@@ -46,13 +51,29 @@
   list-style-type: none;
   text-align: center;
   flex-wrap: wrap;
+  text-transform: uppercase;
+  gap: 33px;
+
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .main-nav__item {
   padding: 25px 0;
   border-top: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .main-nav__link {
+  font-family: $secondary-font;
+  font-style: normal;
+  font-weight: 400;
   text-decoration: none;
+  line-height: 24px;
+  color: $black;
 }

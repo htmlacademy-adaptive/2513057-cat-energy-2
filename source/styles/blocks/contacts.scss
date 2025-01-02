@@ -1,6 +1,72 @@
-.contacts__wrapper {
+.page-footer__contacts {
   font-family: $secondary-font;
   font-size: 20px;
   font-weight: 400;
   line-height: 26px;
+  background-color: $bg-color;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 565px 655px 1fr;
+  }
+}
+
+.contacts__wrapper {
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: center;
+    z-index: 3;
+    background-color: $white;
+    margin: 95px 0 105px;
+  }
+}
+
+.cooperation__title {
+  color: $additional-accent-color;
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  flex: 0 0 50%;
+  max-width: 140px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 163px;
+  }
+}
+
+.contacts__address {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 20px;
+  margin: 0;
+  flex: 0 0 50%;
+  max-width: 140px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 157px;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+}
+
+.contacts__address span {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 18px;
+  }
 }
