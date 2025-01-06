@@ -15,7 +15,8 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header main-header--index main-header--nojs" data-test="header">
+  <header class="main-header main-header--index main-header--opened nojs" data-test="header">
+
     <div class="container">
       <div class="main-header__wrapper">
         <a class="main-header__logotype logotype" href="index.html" aria-cuppent="pade">
@@ -26,20 +27,20 @@
           </picture>
           <img class="logotype__name" src="images/svg/logotype-name.svg" width="101" height="18" alt="Товарный знак CAT ENERGY">
         </a>
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle main-nav__toggle--burger" type="button">
           <span class="visually-hidden">Открыть/Закрыть меню</span>
         </button>
       </div>
       <nav class="main-nav main-nav--bg">
         <ul class="main-nav__list main-nav__list--index">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active" href="#">Главная</a>
+            <a class="main-nav__link main-nav__link--active main-nav__link--opposite main-nav__link--page" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            <a class="main-nav__link main-nav__link--opposite " href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Подбор программы</a>
+            <a class="main-nav__link main-nav__link--opposite " href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -51,14 +52,14 @@
       <div class="promo__wrapper">
         <h1 class="promo__title">Функциональное <br>питание для котов</h1>
         <p class="promo__text">Занялся собой? Займись котом!</p>
-        <div class="promo__container">
-          <picture>
-            <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/raster/cat-energy-chicken@1x.png 1x, images/raster/cat-energy-chicken@2x.png 2x">
-            <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/raster/cat-energy-chicken@1x.png 1x, images/raster/cat-energy-chicken@2x.png 2x">
-            <img class="promo__image" src="images/raster/cat-energy-chicken@1x.png" srcset="images/raster/cat-energy-chicken@2x.png 2x" width="280" height="270" alt="Оранжевая банка с питанием Cat Energy со вкусом курицы">
-          </picture>
-          <a class="promo__button button button--succes" href="form.html">Подобрать программу</a>
-        </div>
+      </div>
+      <div class="promo__container">
+        <picture>
+          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/raster/cat-energy-chicken@1x.png 1x, images/raster/cat-energy-chicken@2x.png 2x">
+          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/raster/cat-energy-chicken@1x.png 1x, images/raster/cat-energy-chicken@2x.png 2x">
+          <img class="promo__image" src="images/raster/cat-energy-chicken@1x.png" srcset="images/raster/cat-energy-chicken@2x.png 2x" width="280" height="270" alt="Оранжевая банка с питанием Cat Energy со вкусом курицы">
+        </picture>
+        <a class="promo__button button button--succes" href="form.html">Подобрать программу</a>
       </div>
     </section>
 
@@ -154,7 +155,7 @@
       <section class="page-footer__contacts contacts">
         <div class="contacts__wrapper">
           <h2 class="contacts__text">Приглашаем <br> к сотрудничеству дилеров!</h2>
-          <address class="contacts__address">ул. Большая <br> Конюшенная, д. 19/8 <br> <span>Санкт-Петербург</span></address>
+          <address class="contacts__address">ул. Большая <br> Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
         </div>
 
         <div class="contacts__map">
@@ -193,6 +194,7 @@
       </a>
     </div>
   </footer>
+  <script src="./scripts/index.js"></script>
 </body>
 
 </html>

@@ -76,4 +76,49 @@
   text-decoration: none;
   line-height: 24px;
   color: $black;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 12px 0;
+    display: block;
+
+    &--active {
+      border-bottom: 2px solid $basic-green;
+      padding-bottom: 9px;
+    }
+
+
+    @media (min-width: $desktop-width) {
+      &--active::after {
+        margin-top: 5px;
+      }
+    }
+  }
+
+
+  &--opposite {
+    @media (min-width: $desktop-width) {
+      color: $white;
+    }
+  }
+
+  &--page::after {
+    @media (min-width: $desktop-width) {
+      content: "";
+      display: block;
+      height: 2px;
+      background-color: $white;
+      position: absolute;
+      width: 100%;
+      margin-top: 6px;
+    }
+  }
 }
+

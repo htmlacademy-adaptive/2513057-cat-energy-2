@@ -23,3 +23,10 @@ img {
 a {
   text-decoration: none;
 }
+
+.nojs {
+  & .main-nav {
+    display: block;
+    position: initial;
+  }
+}
