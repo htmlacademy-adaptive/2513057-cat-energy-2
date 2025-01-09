@@ -1,13 +1,9 @@
 /* в этот файл добавляет скрипты*/
 const button = document.querySelector('.main-nav__toggle');
 
-const header = document.querySelector('header');
+const header = document.querySelector('.main-header');
 
-header.classList.remove('nojs');
-
-header.classList.remove('main-header--opened');
-
-header.classList.add('main-header--closed');
+document.body.classList.remove('nojs');
 
 
 button.addEventListener('click', () => {
@@ -19,12 +15,7 @@ button.addEventListener('click', () => {
   } else{
     header.classList.remove('main-header--closed');
     header.classList.add('main-header--opened');
-    button.classList.remove('main-nav__toggle--burger');
     button.classList.add('main-nav__toggle--open');
   }
 });
 
-const div = document.querySelector('.example__container slider');
-document.querySelector('.example__container slider-range').addEventListener('input', (e) => {
-  div.style.setProperty('--position', `${e.target.value}%`);
-});

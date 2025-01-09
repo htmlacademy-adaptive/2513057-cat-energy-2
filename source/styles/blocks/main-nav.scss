@@ -31,15 +31,19 @@
 
 
 .main-nav__toggle {
-  background-image: url("../../icons/stack.svg#cross");
+  background-image: url("../../icons/stack.svg#burger");
   width: 24px;
   height: 24px;
   background-color: #ffffff;
   background-repeat: no-repeat;
+  border: none;
 
+  &--open {
+    background-image: url("../../icons/stack.svg#cross");
 
-  @media (min-width: $tablet-width) {
-    display: none;
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
