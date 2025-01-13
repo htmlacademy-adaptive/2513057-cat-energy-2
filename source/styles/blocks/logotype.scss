@@ -21,16 +21,12 @@
   opacity: 0.6;
 }
 
-
-.logotype__name.logotype__pictore:hover {
-  color: $additional-accent-color;
+.logotype picture {
+  flex-shrink: 0;
 }
 
-.logotype__name.logotype__pictore:active {
-  color: $additional-accent-color;
-}
 
-.logo__pictore {
+.logo__picture {
   display: block;
   width: 33px;
   height: auto;

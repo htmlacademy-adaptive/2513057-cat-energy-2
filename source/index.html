@@ -16,7 +16,7 @@
 <body class="page__body nojs">
   <header class="main-header main-header--index main-header--closed" data-test="header">
 
-    <div class="container">
+    <div class="container main-header__row">
       <div class="main-header__wrapper">
         <a class="main-header__logotype logotype" href="index.html" aria-cuppent="pade">
           <picture>
@@ -54,9 +54,12 @@
       </div>
       <div class="promo__container">
         <picture>
-          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/raster/cat-energy-chicken@1x.png 1x, images/raster/cat-energy-chicken@2x.png 2x">
-          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/raster/cat-energy-chicken@1x.png 1x, images/raster/cat-energy-chicken@2x.png 2x">
-          <img class="promo__image" src="images/raster/cat-energy-chicken@1x.png" srcset="images/raster/cat-energy-chicken@2x.png 2x" width="280" height="270" alt="Оранжевая банка с питанием Cat Energy со вкусом курицы">
+          <source media="(min-width: 1440px)" srcset="images/raster/cat-energy-chicken-desktop@1x.webp 1x, images/raster/cat-energy-chicken-desktop@2x.webp 2x" type="image/webp" width="552" height="499">
+          <source media="(min-width: 768px)" srcset="images/raster/cat-energy-chicken-tablet@1x.webp 1x, images/raster/cat-energy-chicken-tablet@2x.webp 2x" type="image/webp" width="709" height="609">
+          <source srcset="images/raster/main-can-mobile@1x.webp 1x, images/raster/cat-energy-chicken-mobile@2x.webp 2x" type="image/webp" width="280" height="270">
+          <source media="(min-width: 1440px)" srcset="images/raster/cat-energy-chicken-desktop@1x.png 1x, images/raster/cat-energy-chicken-desktop@2x.png 2x" type="image/png" width="552" height="499">
+          <source media="(min-width: 768px)" srcset="images/raster/cat-energy-chicken-tablet@1x.png 1x, images/raster/cat-energy-chicken-tablet@2x.png 2x" type="image/png" width="709" height="609">
+          <img class="promo__image" src="images/raster/cat-energy-chicken-mobile@1x.png" width="280" height="270" alt="Оранжевая банка с питанием Cat Energy со вкусом курицы" srcset="images/raster/cat-energy-chicken-mobile@2x.png 2x">
         </picture>
         <a class="promo__button button button--succes" href="form.html">Подобрать программу</a>
       </div>
@@ -120,31 +123,38 @@
         <div class="example__statistics">
           <div class="example__progress-list">
             <div class="example__progress">
-              <span class="example__progress-result example__progress-result--block-1">5 кг</span>
-              <span class="example__progress-text example__progress-text--block-1">Снижение веса</span>
+              <span class="example__progress-result">5 кг</span>
+              <span class=" example__progress-text ">Снижение веса</span>
             </div>
-            <div class="example__progress">
-              <span class="example__progress-result example__progress-result--block-2">60 дней</span>
-              <span class="example__progress-text example__progress-text--block-2">Затрачено времени</span>
+            <div class=" example__progress">
+              <span class="example__progress-result example__progress-result--block">60 дней</span>
+              <span class="example__progress-text example__progress-text--block">Затрачено времени</span>
             </div>
           </div>
-          <p class="example__price-text">
-            Затраты на питание:
-            <span class="example__price-value">15 000 руб.</span>
-          </p>
+          <div class="example__wrap">
+            <span class="example__price-text">Затраты на питание:</span>
+            <span class="example__price-text">15 000 руб.</span>
+          </div>
         </div>
       </div>
-      <div class="example__container slider">
+      <div class="slider__wrapper slider__wrapper--before">
         <picture>
-          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/raster/before-cat@1x.png 1x, images/raster/before-cat@2x.png 2x">
-          <img class="slider__image" src="images/raster/before-cat@1x.png" srcset="images/raster/before-cat@2x.png 2x" width="280" height="256" alt="Фото до: толстенький котик">
+          <source media="(min-width: 768px)" srcset="images/raster/cat-tablet-before@1x.webp 1x, images/raster/cat-tablet-before@2x.webp 2x" width="560" height="512" type="image/webp">
+          <source srcset="images/raster/cat-mobile-before@1x.webp 1x, images/raster/cat-mobile-before@2x.webp 2x" width="140" height="256" type="image/webp">
+          <source media="(min-width: 768px)" srcset="images/raster/cat-tablet-before@1x.png 1x, images/raster/cat-tablet-before@2x.png 2x" width="560" height="512" type="image/png">
+          <img class="slider__image slider__image--before" src="images/raster/cat-mobile-before@1x.png" width="140" height="256" alt="Кот До" srcset="images/raster/cat-mobile-before@2x.png 2x">
         </picture>
-        <picture>
-          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/raster/after-cat@1x.png 1x, images/raster/after-cat@2x.png 2x">
-          <img class="slider__image" src="images/raster/after-cat@1x.png" srcset="images/after-cat@2x.png 2x" width="280" height="256" alt="Фото после: худенький котик">
-        </picture>
-        <button class="slider__button" type="button"><span class="visually-hidden">Передвинуть ползунок</span></button>
+      </div>
+      <button class="slider__button" type="button"><span class="visually-hidden">Передвинуть ползунок</span></button>
 
+      <div class="slider__wrapper slider__wrapper--after">
+        <picture>
+          <source media="(min-width: 768px)" srcset="images/raster/cat-tablet-after@1x.webp 1x, images/raster/cat-tablet-after@2x.webp 2x" width="560" height="512" type="image/webp">
+          <source srcset="images/raster/cat-mobile-after@1x.webp 1x, images/raster/cat-mobile-after@2x.webp 2x" width="140" height="256" type="image/webp">
+          <source media="(min-width: 768px)" srcset="images/raster/cat-tablet-after@1x.png 1x, images/raster/cat-tablet-after@2x.png 2x" width="560" height="512" type="image/png">
+          <img class="slider__image slider__image--after" src="images/raster/cat-mobile-after@1x.png" width="140" height="256" alt="Кот После" srcset="images/raster/cat-mobile-after@2x.png 2x">
+        </picture>
+        </di>
       </div>
     </section>
   </main>

@@ -1,5 +1,5 @@
 .main-nav {
-  color: $black;
+
   font-size: 20px;
   line-height: 20px;
   background-color: $white;
@@ -7,25 +7,21 @@
   z-index: 2;
   position: absolute;
   left: 0;
+  top: 100%;
 
   @media (min-width: $tablet-width) {
     position: relative;
-    width: 436px;
     text-wrap: nowrap;
     font-size: 18px;
     line-height: 24px;
-    margin-right: 5px;
+    margin-left: auto;
     display: block;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
-    width: 50%;
     background-color: inherit;
-    padding-top: 9px;
-    padding-left: 133px;
-    box-sizing: border-box;
   }
 }
 
@@ -61,6 +57,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    justify-content: flex-end;
   }
 }
 
@@ -80,6 +77,7 @@
   text-decoration: none;
   line-height: 24px;
   color: $black;
+  padding-top: 55px;
 
   &:hover {
     opacity: 0.6;
@@ -92,37 +90,12 @@
   @media (min-width: $tablet-width) {
     padding: 12px 0;
     display: block;
+  }
 
-    &--active {
+  .main-nev__link--active {
+    @media (min-width: $tablet-width) {
       border-bottom: 2px solid $basic-green;
       padding-bottom: 9px;
     }
-
-
-    @media (min-width: $desktop-width) {
-      &--active::after {
-        margin-top: 5px;
-      }
-    }
-  }
-
-
-  &--opposite {
-    @media (min-width: $desktop-width) {
-      color: $white;
-    }
-  }
-
-  &--page::after {
-    @media (min-width: $desktop-width) {
-      content: "";
-      display: block;
-      height: 2px;
-      background-color: $white;
-      position: absolute;
-      width: 100%;
-      margin-top: 6px;
-    }
   }
 }
-
