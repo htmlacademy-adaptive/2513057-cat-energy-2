@@ -44,7 +44,7 @@
 .program__item {
   font-family: $secondary-font;
   font-weight: 400;
-
+  background: $bg-color;
   color: #000000;
   text-transform: uppercase;
   flex-flow: wrap;
@@ -52,21 +52,22 @@
   align-items: center;
   font-style: normal;
   display: flex;
-  margin: 0 0 29px;
+  margin: 108 0 29px;
   gap: 20px;
   position: relative;
+  padding: 20px;
 }
 
 
-.program__item-title--slim::after {
+.program__icon--slim::after {
   content: "";
   background-image: url("../../icons/stack.svg#black-pantere");
   background-repeat: no-repeat;
   position: absolute;
   width: 67px;
   height: 28px;
-  top: 21px;
-  left: -33px;
+  top: 11px;
+  left: -13px;
 }
 
 .program__icon--pro::after {
@@ -76,13 +77,17 @@
   position: absolute;
   width: 36px;
   height: 50px;
-  top: -28px;
-  left: -16px;
+  top: -3px;
+  left: 6px;
 }
 
 .program__icon {
   position: relative;
   display: inline-block;
+  background-color: $basic-green;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
 }
 
 .program__icon--slim {
@@ -94,26 +99,14 @@
 }
 
 
-.program__icon::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: $basic-green;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: block;
-  z-index: -1;
-}
-
 .program__item-text {
   margin: 0 0 20px;
   font-family: $primary-font;
   font-size: 14px;
   line-height: 18px;
   color: $dark-grey;
+  text-transform: initial;
+
 
   &::after {
     content: "";
@@ -139,4 +132,9 @@
     width: 100%;
     margin-bottom: 23px;
   }
+}
+
+.program__item-title {
+  display: flex;
+  align-items: center;
 }

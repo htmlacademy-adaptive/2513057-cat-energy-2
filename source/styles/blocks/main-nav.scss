@@ -91,11 +91,12 @@
     padding: 12px 0;
     display: block;
   }
+}
 
-  .main-nev__link--active {
-    @media (min-width: $tablet-width) {
-      border-bottom: 2px solid $basic-green;
-      padding-bottom: 9px;
-    }
+
+.main-nav__link--active {
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px solid $basic-green;
+    padding-bottom: 9px;
   }
 }
