@@ -4,26 +4,12 @@
 
 
   @media (min-width: $desktop-width) {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    align-self: center;
     z-index: 3;
     background-color: $white;
-    margin: 95px 0 105px;
-  }
-}
-
-
-.page-footer__contacts {
-  font-family: $secondary-font;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 26px;
-  background-color: $bg-color;
-
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 565px 655px 1fr;
+    position: absolute;
+    top: 150px;
+    left: 130px;
+    padding: 60px 80px;
   }
 }
 
@@ -75,4 +61,14 @@
   @media (min-width: $desktop-width) {
     margin-top: 18px;
   }
+}
+
+.contacts__text {
+  color: #111111;
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
 }

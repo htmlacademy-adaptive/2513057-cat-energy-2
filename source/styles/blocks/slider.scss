@@ -1,7 +1,5 @@
 .slider {
   position: relative;
-  display: flex;
-  justify-content: center;
 }
 
 .slider__item {
@@ -14,11 +12,13 @@
 
   @media (min-width: $tablet-width) {
     max-width: 560px;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
 .slider__wrapper {
-  width: 100%;
+  width: 50%;
   overflow: hidden;
 }
 
@@ -32,27 +32,30 @@
 
 
 .slider__image {
-  max-width: 280px;
+  width: 280px;
+  height: 256px;
+  object-fit: none;
+  max-width: inherit;
 
   @media (min-width: $tablet-width) {
     max-width: 560px;
+    width: auto;
+    height: auto;
   }
 }
 
-.slider__scale {
-  position: absolute;
-  top: 0;
-  width: 4px;
-  height: 100%;
-  cursor: pointer;
-}
 
 .slider__bar {
   border-radius: 2px;
   width: 4px;
   height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   cursor: pointer;
-  background-color: grey;
+  background-color: $dark-grey;
+  position: absolute;
+  top: 0;
+
 
   &:hover {
     background-color: $basic-green;
@@ -67,11 +70,16 @@
 .slider__togle {
   cursor: pointer;
   position: absolute;
-  left: -24px;
-  top: 203px;
   border: none;
-  border-radius: 2px;
   display: block;
+  background-color: #ffffff;
+  background-image: url("../../icons/stack.svg#slider-button");
+  border-radius: 50%;
+  top: 53%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
 
 
   &:hover {
@@ -82,44 +90,13 @@
     border: 2px solid $basic-green;
     opacity: 0.6;
   }
-
-  &::after {
-    content: "";
-    background-color: #ffffff;
-    background-image: url("../../icons/stack.svg#slider-button");
-    border-radius: 50%;
-    top: 53%;
-    left: 53%;
-    translate: (-50%, -50%);
-    position: absolute;
-    width: 40px;
-    height: 40px;
-  }
-
-
-  &--right::after {
-    transform: rotate(180deg);
-    translate: (-50%, -50%);
-  }
-
-  &--left:hover::before,
-  &--right:hover::after {
-    border-right-color: $basic-green;
-  }
-
-  &--left:active::before,
-  &--right:active::after {
-    border-right-color: $basic-green;
-  }
 }
-
 
 .slider__image--after {
+  transform: scale(-1, 1) translateX(130px);
 
-  clip-path: (inset 0 0 0 50%);
-}
+  @media (min-width: $tablet-width) {
 
-
-.visually-hidden {
-  display: none;
+    transform: scale(-1, 1) translateX(260px);
+  }
 }
