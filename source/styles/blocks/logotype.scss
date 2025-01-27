@@ -21,15 +21,13 @@
   opacity: 0.6;
 }
 
-.logotype picture {
-  flex-shrink: 0;
-}
-
 
 .logo__picture {
   display: block;
   width: 33px;
   height: auto;
+  flex-shrink: 0;
+  position: absolute;
 
   @media (min-width: $tablet-width) {
     width: 60px;
@@ -44,6 +42,8 @@
   display: block;
   width: 101px;
   height: 18px;
+  margin-left: -16px;
+  margin-top: -3px;
 
   @media (min-width: $desktop-width) {
     width: 118px;

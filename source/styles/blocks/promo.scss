@@ -1,5 +1,5 @@
 .promo {
-
+  color: $white;
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 60px;
@@ -17,19 +17,19 @@
 }
 
 .promo__wrapper {
-  padding-bottom: 15px;
-  margin-left: 113px;
+  padding-bottom: 0;
 }
 
-.promo__title {
+.promo__tittle {
   z-index: 0;
   position: relative;
-  text-align: center;
+  font-family: $secondary-font;
   font-size: 36px;
   line-height: 36px;
-  margin: 0;
-  padding: 25px 35px 10px;
+  margin: 27px 35px 25px;
   font-weight: 400;
+  text-align: center;
+
 
   @media (min-width: $tablet-width) {
     text-align: start;
@@ -68,7 +68,7 @@
 
 .promo__image {
 
-  margin: 0 auto 5px;
+  margin: 30px auto 5px;
   display: block;
 
   @media (min-width: $tablet-width) {
@@ -83,16 +83,9 @@
 }
 
 .promo__button {
-  font-size: 16px;
-  line-height: 20px;
   list-style-type: none;
-  color: $white;
-  background-color: $basic-green;
-  padding: 10px 63px;
-  display: block;
-  text-align: center;
-  margin: 0 20px 20px;
-  text-transform: uppercase;
+  padding: 9px 63px;
+  margin: -2px 19px 3px;
 
 
   &:hover,

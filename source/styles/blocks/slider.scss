@@ -4,7 +4,6 @@
 
 .slider__item {
   display: flex;
-  justify-content: center;
   text-align: center;
   width: 100%;
   max-width: 280px;
@@ -75,7 +74,7 @@
   background-color: #ffffff;
   background-image: url("../../icons/stack.svg#slider-button");
   border-radius: 50%;
-  top: 53%;
+  top: 49%;
   left: 53%;
   transform: translate(-50%, -50%);
   width: 40px;

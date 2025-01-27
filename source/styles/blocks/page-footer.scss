@@ -59,6 +59,8 @@
 
 .main-footer__wrap {
   width: 57%;
+  display: flex;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
     width: 163px;

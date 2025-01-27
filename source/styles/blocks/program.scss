@@ -14,9 +14,10 @@
   padding: 0;
   display: flex;
   flex-flow: column wrap;
-  gap: 20px;
   margin: 0;
   list-style-type: none;
+  gap: 20px;
+
 
   @media (min-width: $tablet-width) {
     gap: 45px;
@@ -29,16 +30,16 @@
   }
 }
 
-.program__tittle {
+.program__item-tittle {
   display: flex;
   align-items: center;
   font-weight: 400;
-  text-transform: uppercase;
-  margin: 0 0 25px;
+  margin: 24px 25px 25px 19px;
   font-size: 24px;
   line-height: 37px;
   position: relative;
   flex-wrap: wrap;
+  font-family: $secondary-font;
 }
 
 .program__item {
@@ -46,40 +47,40 @@
   font-weight: 400;
   background: $bg-color;
   color: #000000;
-  text-transform: uppercase;
   flex-flow: wrap;
   justify-content: start;
   align-items: center;
   font-style: normal;
   display: flex;
-  margin: 108 0 29px;
-  gap: 20px;
   position: relative;
-  padding: 20px;
+  padding: 23px 38px 4px 41px;
+  font-size: 24px;
+  line-height: 37px;
 }
 
 
-.program__icon--slim::after {
+.program__icon--pro::after {
   content: "";
   background-image: url("../../icons/stack.svg#black-pantere");
   background-repeat: no-repeat;
   position: absolute;
   width: 67px;
   height: 28px;
-  top: 11px;
-  left: -13px;
+  top: 13px;
+  left: -10px;
 }
 
-.program__icon--pro::after {
+.program__icon--slim::after {
   content: "";
   background-image: url("../../icons/stack.svg#black-cat");
   background-repeat: no-repeat;
   position: absolute;
   width: 36px;
   height: 50px;
-  top: -3px;
-  left: 6px;
+  top: -2px;
+  left: 5px;
 }
+
 
 .program__icon {
   position: relative;
@@ -90,23 +91,15 @@
   height: 50px;
 }
 
-.program__icon--slim {
-  margin-right: 35px;
-}
-
-.program__icon--pro {
-  margin-right: 35px;
-}
-
 
 .program__item-text {
-  margin: 0 0 20px;
+
   font-family: $primary-font;
   font-size: 14px;
   line-height: 18px;
   color: $dark-grey;
   text-transform: initial;
-
+  margin: 5px -1px 6px;
 
   &::after {
     content: "";
@@ -134,7 +127,53 @@
   }
 }
 
-.program__item-title {
+.program__item-button {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  color: $black;
+  text-decoration: none;
+  width: fit-content;
+  margin-top: 11px;
+
+  &::after {
+    content: "";
+    display: block;
+    background-image: url("../../icons/stack.svg#icon-raw");
+    background-repeat: no-repeat;
+    background-size: 32px 12px;
+    width: 32px;
+    height: 12px;
+    margin-left: 16px;
+    margin-top: 3px;
+  }
+
+  &:hover::after {
+    background-position: center;
+  }
+
+  &:focus::after {
+    background-position: center;
+    opacity: 0.3;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: auto;
+
+    &::after {
+      margin-left: 25px;
+    }
+  }
 }
+
