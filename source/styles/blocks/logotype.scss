@@ -33,25 +33,9 @@
     width: 60px;
   }
 
+
   @media (min-width: $desktop-width) {
     width: 70px;
   }
 }
 
-.logotype__name {
-  display: block;
-  width: 101px;
-  height: 18px;
-  margin-left: -16px;
-  margin-top: -3px;
-
-  @media (min-width: $desktop-width) {
-    width: 118px;
-    height: 21px;
-  }
-}
-
-.logotype__name-footer {
-  width: 128px;
-  height: 24px;
-}

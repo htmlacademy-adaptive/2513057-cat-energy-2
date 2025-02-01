@@ -1,6 +1,6 @@
 .example {
   background-color: #eaeaea;
-  padding: 25px 0 40px;
+  padding: 25px 0 33px;
 
   @media (min-width: $tablet-width) {
     background-color: $white;
@@ -38,7 +38,6 @@
   line-height: 40px;
   color: $black;
   font-family: $secondary-font;
-  margin-left: 20px;
 
 
   @media (min-width: $tablet-width) {
@@ -57,7 +56,7 @@
   font-size: 14px;
   line-height: 18px;
   color: $dark-grey;
-  margin: -2px 20px 20px;
+  margin: 0 0 19px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -93,8 +92,9 @@
 .example__progress-list {
   list-style-type: none;
   margin: 0 0 22px;
-  display: flex;
-
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
   padding: 0;
   flex-wrap: wrap;
 
@@ -118,28 +118,20 @@
 .example__progress-result {
   text-wrap: nowrap;
   border: 1px solid #cdcdcd;
-  padding: 15px 61px;
+  padding: 15px;
   border-radius: 5px;
   text-align: center;
   font-size: 24px;
   line-height: 24px;
   color: $black;
   font-family: $secondary-font;
+  text-transform: uppercase;
 
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
     padding: 15px 57px 20px;
-  }
-
-  &--block {
-    padding: 15px 33px;
-    text-transform: uppercase;
-
-    @media (min-width: $tablet-width) {
-      padding: 15px 30px 20px;
-    }
   }
 }
 
@@ -208,8 +200,8 @@
   }
 }
 
-.example-row {
-  @media (min-width: $tablet-width) {
+.example__row {
+  @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
   }

@@ -1,5 +1,6 @@
 .slider {
   position: relative;
+  display: flex;
 }
 
 .slider__item {
@@ -92,10 +93,10 @@
 }
 
 .slider__image--after {
-  transform: scale(-1, 1) translateX(130px);
+  transform: translateX(-140px);
 
   @media (min-width: $tablet-width) {
 
-    transform: scale(-1, 1) translateX(260px);
+    transform: translateX(-260px);
   }
 }

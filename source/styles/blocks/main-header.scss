@@ -27,18 +27,18 @@
   content: "";
   display: block;
   position: absolute;
-  top: 57px;
+  top: 100%;
   width: 100%;
   min-height: 302px;
   background-image:
     linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
     image-set(url("../../images/raster/index-background-mobule@2x.webp") type("image/webp") 2x,
-    url("../../images/raster/index-background-mobile@1x.webp") type("image/webp") 1x,
-    url("../../images/raster/index-background-mobile@2x.jpg") 2x,
-    url("../../images/raster/index-background-mobile@1x.jpg") 1x );
+    url("../../images/raster/index-background-mobule@1x.webp") type("image/webp") 1x,
+    url("../../images/raster/index-background-mobule@2x.jpg") 2x,
+    url("../../images/raster/index-background-mobule@1x.jpg") 1x );
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  z-index: -1;
 
 
   @media (min-width: $tablet-width) {
@@ -120,12 +120,14 @@
   min-height: 57px;
   min-width: 280px;
   width: 100%;
-  padding: 11px 20px 10px;
+  padding-top: 11px;
+  padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     min-height: 50px;
     min-width: auto;
     width: auto;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -138,7 +140,7 @@
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 72px;
+  gap: 56px;
 
 
   &:hover {

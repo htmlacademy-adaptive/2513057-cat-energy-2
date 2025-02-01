@@ -1,3 +1,25 @@
+.social {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  list-style-type: none;
+  position: relative;
+  margin: 0;
+  justify-content: center;
+
+
+  @media (min-width: $tablet-width) {
+    padding: 3px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}
+
+
 .social__link {
   background-position: 50%;
   background-repeat: no-repeat;
@@ -38,6 +60,7 @@
 .social__link--youtube {
   background-color: #666666;
   mask-repeat: no-repeat;
-  mask-size: 28px 22px;
+  mask-size: 26px 25px;
   mask-image: url("../../icons/stack.svg#youtube-mobile");
 }
+
