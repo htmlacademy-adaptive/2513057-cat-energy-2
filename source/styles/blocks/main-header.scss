@@ -13,6 +13,7 @@
 
   @media (min-width: $desktop-width) {
     background-color: transparent;
+    padding-top: 38px;
   }
 }
 
@@ -49,8 +50,8 @@
     display: block;
     position: absolute;
     width: 50%;
-    top: -36px;
-    right: 0;
+    top: 0;
+    right: -14px;
     min-height: 694px;
     background-image:
       linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),

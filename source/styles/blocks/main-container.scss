@@ -11,9 +11,9 @@
 
 .main-container__heading {
   width: 100%;
-  text-align: center;
   text-wrap: nowrap;
-  margin: 26px -11px 40px;
+  margin: 0;
+  padding: 26px 0 43px;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -34,17 +34,17 @@
   }
 
   &::before {
-    bottom: 63px;
+    bottom: 0;
   }
 
   &::after {
-    top: 75px;
+    top: 0;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin: 0 0 85px;
+    padding: 0 0 85px;
     text-align: left;
 
     &::before,

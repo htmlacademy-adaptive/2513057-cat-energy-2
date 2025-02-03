@@ -20,7 +20,7 @@
 
 .additional-products__heading {
   z-index: 0;
-  margin: 0 0 48px;
+  margin: 4px 0 48px;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -157,7 +157,7 @@
 
 
 .product__title {
-  margin: 0;
+  margin: 1px;
   font-size: 16px;
   line-height: 16px;
   color: $light-grey;
@@ -168,14 +168,12 @@
   @media (min-width: $tablet-width) {
     //font-size: 20px;//
     line-height: 20px;
-  }
-}
 
 .product__title__stats {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 15px 0;
+  padding: 13px 1px;
 
   @media (min-width: $tablet-width) {
     gap: 52px;

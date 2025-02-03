@@ -49,10 +49,11 @@
 .button--succes {
   background-color: $basic-green;
   color: $white;
-}
+  margin-top: 10px;
+  padding: 10px;
 
-.button--ligth {
-  background-color: $bg-color;
-  color: $dark-grey;
+  .button--ligth {
+    background-color: $bg-color;
+    color: $dark-grey;
+  }
 }
-
