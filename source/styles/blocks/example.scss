@@ -4,7 +4,7 @@
 
   @media (min-width: $tablet-width) {
     background-color: $white;
-    padding: 50px 0 93px;
+    padding: 45px 0 96px;
     position: relative;
 
     &::before {
@@ -65,7 +65,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 436px;
+    width: 432px;
     position: relative;
     margin-bottom: 70px;
   }
@@ -79,7 +79,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
   }
 
   @media (min-width: $desktop-width) {
@@ -131,9 +131,15 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
-    padding: 15px 57px 20px;
+    padding: 15px 30px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+    padding: 15px 29px 20px;
   }
 }
+
 
 .example__progress-text {
   width: 67px;
@@ -154,7 +160,7 @@
     line-height: 14px;
     background-color: $white;
     width: fit-content;
-    top: 65px;
+    top: 63px;
     text-wrap: nowrap;
   }
 

@@ -2,7 +2,6 @@
   display: flex;
   color: inherit;
   justify-content: space-between;
-  align-items: center;
   font-family: $primary-font;
   font-size: 16px;
   font-style: normal;
@@ -11,5 +10,16 @@
   text-decoration: none;
   transition: all, all 1.3s;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    gap: 23px;
+    margin-top: -2px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+    margin-top: 2px;
+  }
 }
 

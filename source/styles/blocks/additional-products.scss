@@ -29,6 +29,7 @@
   padding: 0 40px 0 0;
   background-color: $white;
   width: fit-content;
+  font-family: $secondary-font;
 
   &::before,
   &::after {
@@ -161,6 +162,8 @@
   line-height: 16px;
   color: $light-grey;
   text-transform: uppercase;
+  font-family: $secondary-font;
+  font-weight: 400;
 
   @media (min-width: $tablet-width) {
     //font-size: 20px;//

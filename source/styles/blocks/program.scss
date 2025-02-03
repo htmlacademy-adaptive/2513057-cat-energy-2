@@ -9,7 +9,7 @@
 
 
   @media (min-width: $tablet-width) {
-    gap: 45px;
+    gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,6 +31,19 @@
   position: relative;
   flex-wrap: wrap;
   font-family: $secondary-font;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 62px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+  }
 }
 
 .program__item {
@@ -42,8 +55,11 @@
   padding: 23px 20px;
   font-size: 24px;
   line-height: 37px;
-}
 
+  @media (min-width: $tablet-width) {
+    padding: 77px 52px 57px;
+  }
+}
 
 .program__icon--pro::after {
   content: "";
@@ -52,8 +68,19 @@
   position: absolute;
   width: 67px;
   height: 28px;
-  top: 13px;
-  left: -10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 112px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 56px;
+  }
 }
 
 .program__icon--slim::after {
@@ -63,8 +90,22 @@
   position: absolute;
   width: 36px;
   height: 50px;
-  top: -2px;
-  left: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+  @media (min-width: $tablet-width) {
+    width: 140px;
+    height: 194px;
+    transform: translate(-50%, -57%);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 97px;
+    transform: translate(-50%, -57%);
+  }
 }
 
 
@@ -75,11 +116,26 @@
   border-radius: 50%;
   width: 50px;
   height: 50px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 11px;
+    top: 15px;
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    right: 4px;
+    top: -27px;
+  }
 }
 
 
 .program__item-text {
-
   font-family: $primary-font;
   font-size: 14px;
   line-height: 18px;
@@ -89,18 +145,18 @@
   margin-bottom: 18px;
   border-bottom: 1px solid #d9d9d9;
   padding-bottom: 24px;
+  width: 96%;
 
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    width: 58%;
-    margin: 0 0 50px;
-
-    &::after {
-      display: none;
-    }
+    width: 57%;
+    margin: 0 0 51px;
+    border: none;
+    padding: 0;
   }
+
 
   @media (min-width: $desktop-width) {
     width: 100%;

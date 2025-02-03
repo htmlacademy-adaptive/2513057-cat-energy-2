@@ -7,11 +7,8 @@
     gap: 13px;
     height: auto;
   }
-
-  @media (min-width: $desktop-width) {
-    gap: 14px;
-  }
 }
+
 
 .logotype:hover {
   opacity: 0.8;
@@ -39,3 +36,13 @@
   }
 }
 
+.logotype__name {
+  @media (min-width: $desktop-width) {
+    height: 31px;
+    min-width: 121px;
+
+    &--footer {
+      width: 128px;
+    }
+  }
+}

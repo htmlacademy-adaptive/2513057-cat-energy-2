@@ -3,7 +3,7 @@
   padding: 20px 0 50px;
 
   @media (min-width: $tablet-width) {
-    padding: 30px 0 50px;
+    padding: 45px 0 59px;
     position: relative;
 
     &::after {
@@ -40,6 +40,10 @@
     line-height: 60px;
     margin-bottom: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 25px;
+  }
 }
 
 .advantages__list {
@@ -52,12 +56,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px 136px;
+    gap: 37px 154px;
     counter-reset: item;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 77px;
+    gap: 95px;
   }
 }
 
@@ -100,7 +104,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 50px 17px 46px 0;
+    padding: 52px 17px 46px 0;
     width: 230px;
     background-repeat: no-repeat;
     background-position: right;
@@ -121,7 +125,6 @@
       position: absolute;
       z-index: -1;
       top: 10px;
-      right: 0;
       left: 120px;
     }
 

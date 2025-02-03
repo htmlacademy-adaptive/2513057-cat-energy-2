@@ -13,12 +13,13 @@
   width: 100%;
   text-align: center;
   text-wrap: nowrap;
-  margin: 27px -11px 40px;
+  margin: 26px -11px 40px;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   color: $black;
   position: relative;
+  font-family: $secondary-font;
 
   &::before,
   &::after {
