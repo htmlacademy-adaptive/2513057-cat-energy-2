@@ -8,6 +8,8 @@
 
 /* BLOCKS */
 @import "./blocks/page.scss";
+@import "./blocks/button.scss";
+@import "./blocks/container.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/main-title.scss";
 @import "./blocks/logotype.scss";
@@ -21,10 +23,10 @@
 @import "./blocks/page-footer.scss";
 @import "./blocks/catalog.scss";
 @import "./blocks/card.scss";
+@import "./blocks/card-flavors.scss";
 @import "./blocks/promo.scss";
 @import "./blocks/additional-products.scss";
-@import "./blocks/button.scss";
-@import "./blocks/container.scss";
+@import "./blocks/product.scss";
 @import "./blocks/actions.scss";
 @import "./blocks/main-futer.scss";
 @import "./blocks/slider.scss";

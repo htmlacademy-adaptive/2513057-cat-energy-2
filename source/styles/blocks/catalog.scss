@@ -20,7 +20,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    padding: 80px 37px 40px;
+    padding: 0 37px 40px;
     margin: 0;
     height: 100%;
     box-sizing: border-box;
@@ -40,12 +40,12 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px 60px;
+    gap: 140px 60px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 60px 80px;
+    gap: 145px 80px;
   }
 }
 
