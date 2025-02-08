@@ -20,14 +20,6 @@
   }
 }
 
-.additional-products__wrapper {
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 896px 245px;
-    gap: 80px;
-  }
-}
-
 .main-container__heading {
   width: 100%;
   text-wrap: nowrap;

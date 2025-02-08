@@ -26,7 +26,7 @@
           </picture>
           <img class="logotype__name" src="images/svg/logotype-name.svg" width="101" height="18" alt="Товарный знак CAT ENERGY">
         </a>
-        <button class="main-nav__toggle main-nav__toggle--open" type="button">
+        <button class="main-header__toggle" type="button">
           <span class="visually-hidden">Открыть/Закрыть меню</span>
         </button>
       </div>
@@ -79,7 +79,7 @@
             <p class="program__item-text program__item-text--slim">
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
-            <a class="program__item-button button--ligth" href="catalog.html">Каталог Slim</a>
+            <a class="program__item-button" href="catalog.html">Каталог Slim</a>
           </li>
           <li class="program__item program__item--pro">
 
@@ -90,7 +90,7 @@
             <p class="program__item-text program__item-text--pro">
               Заработать авторитет среди дворовых котов и даже собак?Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
-            <a class="program__item-button button--ligth " href="catalog.html">Каталог Pro</a>
+            <a class="program__item-button" href="catalog.html">Каталог Pro</a>
           </li>
         </ul>
       </div>
@@ -178,7 +178,17 @@
         </div>
       </div>
       <div class="contacts__map">
-        <iframe class="contacts__location" src="https://yandex.ru/map-widget/v1/?ll=30.325680%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=16.64" allowfullscreen="true"></iframe>
+        <iframe class="contacts__location" src="https://yandex.ru/map-widget/v1/?ll=30.325680%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=16.64"></iframe>
+
+        <picture>
+          <source media="(min-width: 1440px)" width="1440" height="400" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x" type="image/webp">
+          <source media="(min-width: 768px)" width="768" height="400" srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x" type="image/webp">
+          <source srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x" width="320" height="362" type="image/webp">
+          <source media="(min-width: 1440px)" width="1440" height="400" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x" type="image/jpg">
+          <source media="(min-width: 768px)" width="768" height="400" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x" type="image/jpg">
+          <img class="contacts__img" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Карта с расположением офиса компании">
+        </picture>
+
       </div>
     </section>
 
@@ -209,7 +219,7 @@
           </ul>
 
           <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/.">
-            <span class="futer-copiright__text">HTML Academy</span>
+            <span>HTML Academy</span>
             <svg width="27" height="34">
               <use href="icons/stack.svg#academy-logo"></use>
             </svg>

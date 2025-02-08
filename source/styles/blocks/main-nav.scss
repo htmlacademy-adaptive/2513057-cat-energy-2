@@ -29,23 +29,6 @@
   }
 }
 
-.main-nav__toggle {
-  background-image: url("../../icons/stack.svg#burger");
-  width: 24px;
-  height: 24px;
-  background-color: #ffffff;
-  background-repeat: no-repeat;
-  border: none;
-
-  &--open {
-    background-image: url("../../icons/stack.svg#cross");
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
-}
-
 .main-nav__list {
   display: flex;
   flex-flow: column wrap;
@@ -55,11 +38,12 @@
   text-align: center;
   flex-wrap: wrap;
   text-transform: uppercase;
-  gap: 33px;
+
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: flex-end;
+    gap: 33px;
   }
 }
 

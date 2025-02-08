@@ -152,7 +152,32 @@
   }
 }
 
-.main-header--closed.main-nav {
+.main-header--closed .main-nav {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
+.main-header--opened .main-nav {
+  display: block;
+}
+
+.main-header--opened .main-header__toggle {
+  background-image: url("../../icons/stack.svg#cross");
+}
+
+
+.main-header__toggle {
+  background-image: url("../../icons/stack.svg#burger");
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

@@ -18,24 +18,6 @@
   opacity: 0.6;
 }
 
-
-.logo__picture {
-  display: block;
-  width: 33px;
-  height: auto;
-  flex-shrink: 0;
-  position: absolute;
-
-  @media (min-width: $tablet-width) {
-    width: 60px;
-  }
-
-
-  @media (min-width: $desktop-width) {
-    width: 70px;
-  }
-}
-
 .logotype__name {
   @media (min-width: $desktop-width) {
     height: 31px;

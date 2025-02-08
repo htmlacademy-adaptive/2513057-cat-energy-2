@@ -1,17 +1,3 @@
-.catalog-item {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 20px 0 25px;
-
-
-  @media (min-width: $tablet-width) {
-    padding: 40px 37px;
-    min-height: 350px;
-    display: block;
-  }
-}
-
-
 .catalog__item-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -25,6 +11,7 @@
     height: 100%;
     box-sizing: border-box;
     background-color: $bg-color;
+    border: none;
 
     &::after {
       display: none;
@@ -49,7 +36,7 @@
   }
 }
 
-.catalog-cards__image-link {
+.catalog__image-link {
   grid-row: 1 / 3;
   justify-self: center;
 

@@ -3,6 +3,14 @@
   position: initial;
 }
 
-.nojs .main-hav__toggle {
+.nojs .main-header__toggle {
+  display: none;
+}
+
+.nojs .contacts__img {
+  display: block;
+}
+
+.nojs .contacts__location {
   display: none;
 }
