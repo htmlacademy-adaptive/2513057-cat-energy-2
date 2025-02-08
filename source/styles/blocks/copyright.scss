@@ -1,0 +1,25 @@
+.copyright {
+  display: flex;
+  color: inherit;
+  justify-content: space-between;
+  font-family: $primary-font;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+  transition: all, all 1.3s;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    gap: 23px;
+    margin-top: -2px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+    margin-top: 2px;
+  }
+}
+
