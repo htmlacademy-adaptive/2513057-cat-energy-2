@@ -1,0 +1,183 @@
+.main-header {
+  background-color: #ffffff;
+  color: $white;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #e6e6e6;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+    padding-top: 38px;
+  }
+}
+
+.main-header--index {
+  position: relative;
+  color: $white;
+  border-bottom: none;
+}
+
+
+.main-header--index::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  min-height: 302px;
+  background-image:
+    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    image-set(url("../../images/raster/index-background-mobule@2x.webp") type("image/webp") 2x,
+    url("../../images/raster/index-background-mobule@1x.webp") type("image/webp") 1x,
+    url("../../images/raster/index-background-mobule@2x.jpg") 2x,
+    url("../../images/raster/index-background-mobule@1x.jpg") 1x );
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    position: absolute;
+    width: 50%;
+    top: 0;
+    right: 0;
+    min-height: 694px;
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      image-set(url("../../images/raster/index-background-desktop@2x.webp") type("image/webp") 2x,
+      url("../../images/raster/index-background-desktop@1x.webp") type("image/webp") 1x,
+      url("../../images/raster/index-background-desktop@2x.jpg") 2x,
+      url("../../images/raster/index-background-desktop@1x.jpg") 1x );
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    z-index: 0;
+  }
+}
+
+.main-header--index .main-nav__link--active {
+  @media (min-width: $desktop-width) {
+    border-bottom-color: $white;
+  }
+}
+
+.main-header--index .main-nav__link {
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
+}
+
+.main-header__row {
+  @media (min-width: $tablet-width) {
+    gap: 64px;
+    display: flex;
+  }
+}
+
+.main-header__container {
+  padding-top: 13px;
+  padding-bottom: 14px;
+
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 110px;
+      padding-bottom: 0;
+      padding-top: 50px;
+    }
+  }
+
+  &--opposite {
+    @media (min-width: $desktop-width) {
+      margin: 0;
+    }
+  }
+}
+
+.main-header__wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 57px;
+  min-width: 280px;
+  width: 100%;
+  padding-top: 11px;
+  padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 50px;
+    min-width: auto;
+    width: auto;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    min-height: 60px;
+  }
+}
+
+.main-header__logotype {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 56px;
+
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+}
+
+.main-header--closed .main-nav {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.main-header--opened .main-nav {
+  display: block;
+}
+
+.main-header--opened .main-header__toggle {
+  background-image: url("../../icons/stack.svg#cross");
+}
+
+
+.main-header__toggle {
+  background-image: url("../../icons/stack.svg#burger");
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

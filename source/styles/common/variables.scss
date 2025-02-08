@@ -1,1 +1,29 @@
 /* здесь используйте глобальные переменные */
+/* font */
+$primary-font: "Lato", "Arial", "Helvetica", sans-serif;
+$secondary-font: "Oswald", "Arial", "Helvetica", sans-serif;
+
+/* color */
+$basic-green : #68b738;
+$dark-grey : #444444;
+$black : #000000;
+$white: #ffffff;
+$light-grey :#222222;
+$bg-color: #f2f2f2;
+$additional-accent-color:#111111;
+$primary-border-color:#cdcdcd;
+$additional-border-color:#e7e7e7;
+
+
+/* viewport */
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
+$mobile-width-only: 767px;
+
+
+/* elements states */
+$basic-button-color:rgba(94, 170, 47, 1);
+$additional-button-color:rgba(235, 235, 235, 1);
+$slider-active-color:rgba(94, 170, 47, 1);
+$input-red-color:#ff8282;

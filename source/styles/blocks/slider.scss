@@ -1,0 +1,115 @@
+.slider {
+  position: relative;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    height: 512px;
+  }
+}
+
+.slider__item {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  max-width: 280px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    max-width: 560px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.slider__wrapper {
+  width: 50%;
+  overflow: hidden;
+}
+
+.slider__wrapper--before {
+  text-align: right;
+}
+
+.slider__wrapper--after {
+  text-align: left;
+}
+
+
+.slider__image {
+  width: 280px;
+  height: 256px;
+  object-fit: none;
+  max-width: inherit;
+
+  @media (min-width: $tablet-width) {
+    max-width: 560px;
+    width: auto;
+    height: auto;
+  }
+}
+
+
+.slider__bar {
+  border-radius: 2px;
+  width: 4px;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  background-color: $dark-grey;
+  position: absolute;
+  top: 0;
+
+
+  &:hover {
+    background-color: $basic-green;
+  }
+
+  &:active {
+    background-color: $basic-green;
+    opacity: 0.6;
+  }
+}
+
+.slider__togle {
+  cursor: pointer;
+  position: absolute;
+  border: none;
+  display: block;
+  background-color: #ffffff;
+  background-image: url("../../icons/stack.svg#slider-button");
+  border-radius: 50%;
+  top: 49%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+
+  @media (min-width: $desktop-width) {
+    top: 51%;
+  }
+
+  &:hover {
+    border: 2px solid $basic-green;
+  }
+
+  &:active {
+    border: 2px solid $basic-green;
+    opacity: 0.6;
+  }
+}
+
+.slider__image--after {
+  transform: translateX(-140px);
+
+  @media (min-width: $tablet-width) {
+
+    transform: translateX(-280px);
+  }
+}
