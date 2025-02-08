@@ -1,1 +1,0 @@
-var s=document.querySelector(".main-header__toggle"),e=document.querySelector(".main-header");document.body.classList.remove("nojs");s.addEventListener("click",()=>{e.classList.contains("main-header--opened")?(e.classList.add("main-header--closed"),e.classList.remove("main-header--opened")):(e.classList.remove("main-header--closed"),e.classList.add("main-header--opened"))});
