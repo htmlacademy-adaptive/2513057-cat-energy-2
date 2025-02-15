@@ -8,7 +8,6 @@
   margin: 0;
   justify-content: center;
 
-
   @media (min-width: $tablet-width) {
     padding: 3px;
 
@@ -19,7 +18,6 @@
   }
 }
 
-
 .social__link {
   background-position: 50%;
   background-repeat: no-repeat;
@@ -28,20 +26,20 @@
   transition: all 1.3s;
   display: block;
 
-
   &:hover {
     background-color: $basic-green;
   }
 
-  &:focus::before {
+  &:focus {
     background-color: $basic-green;
   }
 
-  &:active::before {
+  &:active {
     background-color: $basic-green;
     opacity: 0.3;
   }
 }
+
 
 .social__link--vkontakte {
   background-color: #666666;
@@ -63,4 +61,3 @@
   mask-size: 26px 25px;
   mask-image: url("../../icons/stack.svg#youtube-mobile");
 }
-

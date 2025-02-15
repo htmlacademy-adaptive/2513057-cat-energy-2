@@ -39,14 +39,12 @@
   flex-wrap: wrap;
   text-transform: uppercase;
 
-
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: flex-end;
     gap: 33px;
   }
 }
-
 
 .main-nav__item {
   padding: 25px 0;
@@ -83,7 +81,6 @@
     display: block;
   }
 }
-
 
 .main-nav__link--active {
   @media (min-width: $tablet-width) {

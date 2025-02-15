@@ -39,7 +39,6 @@
   color: $black;
   font-family: $secondary-font;
 
-
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
@@ -127,7 +126,6 @@
   font-family: $secondary-font;
   text-transform: uppercase;
 
-
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
@@ -135,11 +133,9 @@
   }
 
   @media (min-width: $desktop-width) {
-
     padding: 15px 29px 20px;
   }
 }
-
 
 .example__progress-text {
   width: 67px;

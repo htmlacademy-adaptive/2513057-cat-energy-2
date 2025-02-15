@@ -73,7 +73,6 @@
   display: flex;
   align-items: center;
 
-
   &::before {
     content: "";
     width: 60px;
@@ -148,3 +147,8 @@
   }
 }
 
+.advantages__br {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}

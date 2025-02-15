@@ -8,7 +8,6 @@
     border-bottom: 1px solid $primary-border-color;
   }
 
-
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -21,7 +20,6 @@
     padding: 26px 38px;
     gap: 25px 200px;
   }
-
 
   @media (min-width: $desktop-width) {
     border-left: none;
@@ -52,7 +50,6 @@
     line-height: 20px;
   }
 }
-
 
 .product__title-stats {
   display: flex;

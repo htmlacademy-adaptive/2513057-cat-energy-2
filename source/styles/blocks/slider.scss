@@ -40,7 +40,6 @@
   text-align: left;
 }
 
-
 .slider__image {
   width: 280px;
   height: 256px;
@@ -54,7 +53,6 @@
   }
 }
 
-
 .slider__bar {
   border-radius: 2px;
   width: 4px;
@@ -65,7 +63,6 @@
   background-color: $dark-grey;
   position: absolute;
   top: 0;
-
 
   &:hover {
     background-color: $basic-green;

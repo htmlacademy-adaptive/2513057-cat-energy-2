@@ -21,13 +21,11 @@
     flex-flow: column wrap;
     align-items: center;
 
-
     &::after {
       display: none;
     }
   }
 }
-
 
 .card-flavors__goods {
   margin: 0;
@@ -49,7 +47,6 @@
     height: 30px;
     margin: 0 auto 23px;
   }
-
 
   @media (min-width: $tablet-width) {
     margin-bottom: 23px;

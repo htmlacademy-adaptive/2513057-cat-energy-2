@@ -19,10 +19,8 @@
   }
 }
 
-
 .catalog__list {
   margin: 0 auto;
-
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -53,4 +51,3 @@
     margin-top: 3px;
   }
 }
-
